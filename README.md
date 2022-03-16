@@ -1,4 +1,16 @@
-> A batteries-included Django starter project. For a production-ready version see the book [Django for Professionals](https://djangoforprofessionals.com).
+## Get started
+
+1. Clone down the repo.
+2. Download .env file and add it under config folder. Make sure the file name is `.env`.
+3. Run command `python3 -m venv .venv` and `source .venv/bin/activate` to setup virtual environment.
+4. Run command `pip install -r requirements.txt` to install the dependencies.
+5. Run command `python manage.py makemigrations` and `python manage.py migrate`.
+6. Run command `python manage.py createsuperuser` and follow prompt to create a superuser. Make sure you add some email address when make a superuser.
+7. Run command `python manage.py runserver` to run the server.
+8. Use the URL in the terminal and in the `tv_shows/` path, checkout the app and CRUD functionality.
+9. Run command `python manage.py test` to run unit test.
+
+   > A batteries-included Django starter project. For a production-ready version see the book [Django for Professionals](https://djangoforprofessionals.com).
 
 ## 🚀 Features
 
@@ -10,22 +22,23 @@
 - Debugging with [django-debug-toolbar](https://github.com/jazzband/django-debug-toolbar)
 - DRY forms with [django-crispy-forms](https://github.com/django-crispy-forms/django-crispy-forms)
 
-![Homepage](homepage.png)
-----
+## ![Homepage](homepage.png)
 
 ## Table of Contents
-* **[Installation](#installation)**
-  * [Pip](#pip)
-  * [Pipenv](#pipenv)
-  * [Docker](#docker)
-* [Setup](#setup)
-* [Contributing](#contributing)
-* [Support](#support)
-* [License](#license)
 
-----
+- **[Installation](#installation)**
+  - [Pip](#pip)
+  - [Pipenv](#pipenv)
+  - [Docker](#docker)
+- [Setup](#setup)
+- [Contributing](#contributing)
+- [Support](#support)
+- [License](#license)
+
+---
 
 ## 📖 Installation
+
 DjangoX can be installed via Pip, Pipenv, or Docker depending upon your setup. To start, clone the repo to your local computer and change into the proper directory.
 
 ```
@@ -91,7 +104,7 @@ INTERNAL_IPS = [ip[:-1] + "1" for ip in ips]
 # Load the site at http://127.0.0.1:8000
 ```
 
-----
+---
 
 ## 🤝 Contributing
 
@@ -99,12 +112,11 @@ Contributions, issues and feature requests are welcome! See [CONTRIBUTING.md](ht
 
 ## ⭐️ Support
 
-Give a ⭐️  if this project helped you!
+Give a ⭐️ if this project helped you!
 
 ## License
 
 [The MIT License](LICENSE)
-
 
 <!-- ## Docker Usage
 ```
