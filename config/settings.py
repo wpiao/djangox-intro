@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'accounts',
     'pages',
     'tv_shows',
+    # 'tv_shows.apps.TvShowsConfig'
 ]
 
 # MIDDLEWARE
@@ -179,3 +180,4 @@ ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth import get_user_model
+from django.urls import reverse
 
 
 class TvShow(models.Model):
@@ -9,3 +10,6 @@ class TvShow(models.Model):
 
     def __str__(self):
         return f'{self.name}'
+
+    def get_absolute_url(self):
+        return reverse('tvshow_detail', args=[str(self.id)])

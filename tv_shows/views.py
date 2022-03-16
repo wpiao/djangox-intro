@@ -17,6 +17,7 @@ class TvShowCreateView(CreateView):
     template_name = 'tv_shows/tvshow_create.html'
     model = TvShow
     fields = ['name', 'rating', 'rater']
+    success_url = reverse_lazy('tvshow_list')
 
 
 class TvShowUpdateView(UpdateView):
